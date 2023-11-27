@@ -1,4 +1,4 @@
-FROM nethost/alpine:3.18
+FROM nethost/alpine:3.18 as latest
 
 ### Set Defaults
     ARG S6_OVERLAY_VERSION=v1.21.7.0 
@@ -55,10 +55,6 @@ FROM nethost/alpine:3.18
 
 ### S6 Installation
        curl -sSL https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz | tar xfz - -C / && \
-
-### add aliyun ossutil
-       curl -o /usr/bin/ossutil http://gosspublic.alicdn.com/ossutil/1.7.5/ossutil64 && \
-       chmod +x /usr/bin/ossutil && \
 
 ### Add Folders
        mkdir -p /assets/cron
