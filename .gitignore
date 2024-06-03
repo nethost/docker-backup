@@ -30,11 +30,13 @@ bin/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-docker-lamp/services/mysql/data
-docker-lnmp/services/mysql/data
+data
 
 #Webstorm metadata
 .idea
 
 # Mac files
 .DS_Store
+
+# Declare files that will always have LF line endings on checkout.
+*.* text eol=lf
