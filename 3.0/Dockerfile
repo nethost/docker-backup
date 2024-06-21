@@ -1,4 +1,4 @@
-FROM nethost/alpine:3.20 as latest
+FROM nethost/alpine:3.20 AS latest
 LABEL maintainer="Billgo (https://billgo.me)"
 
 ### Set Environment Variables

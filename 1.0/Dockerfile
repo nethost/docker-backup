@@ -1,4 +1,4 @@
-FROM nethost/alpine:edge as latest
+FROM nethost/alpine:edge AS latest
 
 ### Set Defaults
     ARG S6_OVERLAY_VERSION=v1.21.7.0 

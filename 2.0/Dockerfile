@@ -1,4 +1,4 @@
-FROM nethost/alpine:edge as latest
+FROM nethost/alpine:edge AS latest
 
 LABEL maintainer="hi@billgo.me"
 
